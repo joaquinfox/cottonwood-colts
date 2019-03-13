@@ -29,7 +29,7 @@ const PlayerAPI = {
       },
       Plays: ['Basketball', 'Baseball', 'Football']
     },
-        {
+    {
       number: 22,
       name: 'Kevin Mills',
       position: 'PF',
@@ -42,8 +42,8 @@ const PlayerAPI = {
       },
       Plays: ['Basketball', 'Football']
     },
-         {
-      number: 22,
+    {
+      number: 17,
       name: 'Cameron Cliatt',
       position: 'G',
       Overall: '23-7',
@@ -55,7 +55,7 @@ const PlayerAPI = {
       },
       Plays: ['Basketball']
     },
-           {
+    {
       number: 30,
       name: 'Marquis Holland',
       position: 'PG',
@@ -67,11 +67,12 @@ const PlayerAPI = {
         Grade: 'Senior'
       },
       Plays: ['Basketball']
-    },
+    }
   ],
 
   all: function() {
     return this.players;
+  
   },
   get: function(id) {
     const isPlayer = p => p.number === id;
