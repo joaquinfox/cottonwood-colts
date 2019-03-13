@@ -9,6 +9,12 @@ export default function Header() {
           <li>
             <Link to="/roster">Roster</Link>
           </li>
+          <li>
+            <Link to="/schedule">Schedule</Link>
+          </li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
         </ul>
       </nav>
     </header>

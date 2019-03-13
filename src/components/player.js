@@ -1,5 +1,6 @@
 import React from 'react';
 import PlayerAPI from '../api';
+import { Link } from 'react-router-dom';
 
 export default function Player(props) {
   const player = PlayerAPI.get(parseInt(props.match.params.number, 10));
@@ -10,7 +11,7 @@ export default function Player(props) {
   return (
     <div className="player">
       <h1>{player.name}</h1>
-      This is player
+      <Link to="/roster">Back</Link>
     </div>
   );
 }
